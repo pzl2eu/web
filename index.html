@@ -1,0 +1,165 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="cnende" />
+    <title>The LUO Project</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+  </head>
+  <body>
+    <nav class="sticky w-full border-b p-6 shadow-md">
+      <span class="text-4xl">🇨🇳</span>
+      <span class="text-4xl">🇸🇧</span>
+      <span class="text-4xl">🇩🇪</span>
+    </nav>
+
+    
+
+    <main class="max-w-screen-xl mx-auto">
+      <header class="p-6">
+        <div class="text-center text-4xl">👨‍💻</div>
+        <p class="text-center text-lg font-medium">
+          Hallo Leute! Ich bin Herr Luo aus China und lebe nun in
+          <u>Deutschland</u>. Ich spreche <u>Chinesisch</u>, <u>Englisch</u> und
+          <u>Deutsch</u> und habe einen <u>Bachelorabschluss</u> in
+          <u>Geoinformatik</u>.
+        </p>
+      </header>
+      <section
+        id="cards"
+        class="mx-auto grid max-w-4xl grid-cols-1 gap-6 p-6 sm:max-w-5xl sm:grid-cols-2 lg:max-w-6xl lg:grid-cols-3"
+      >
+        <div id="it-skill" class="rounded-lg border p-6 shadow-lg">
+          <p class="text-center font-semibold text-indigo-500">IT Skills</p>
+          <ul class="mt-4 list-disc space-y-2 pl-6">
+            <li>Git</li>
+            <li>Bash</li>
+            <li>PostgreSQL</li>
+            <li>TailwindCSS</li>
+          </ul>
+        </div>
+        <div id="qualification" class="rounded-lg border p-6 shadow-lg">
+          <p class="text-center font-semibold text-indigo-500">Qualification</p>
+          <ul class="mt-4 list-disc space-y-2 pl-6">
+            <li class="hover:text-blue-500">Goethe-Zertifikat B2</li>
+            <li class="hover:text-blue-500">CET-4</li>
+            <li class="hover:text-blue-500">B.E. in Geoinformatics</li>
+          </ul>
+        </div>
+        <div id="service" class="rounded-lg border p-6 shadow-lg">
+          <p class="text-center font-semibold text-indigo-500">Service</p>
+          <ul class="mt-4 list-disc space-y-2 pl-6">
+            <li>German/English grammar course</li>
+            <li>Chinese-English/Chinese-German certificate translation</li>
+            <li>Mock Interview in Chinese/English/German</li>
+          </ul>
+        </div>
+      </section>
+      <section id="image-carousel" class=" p-6">
+        <div>
+          <img
+            src="./assets/img/Shanghai.jpeg"
+            class="mx-auto rounded-lg object-cover"
+            alt=""
+            loading="lazy"
+          />
+        </div>
+      </section>
+      
+      <section id="Terms" class="p-6">
+        <div id="faqs">
+          <div class="border-b-2"><span class="p-6 text-lg">FAQs</span></div>
+
+          <div id="qa1" class="border-b-2">
+            <input type="checkbox" id="faq1" class="peer hidden" />
+            <label
+              for="faq1"
+              class="block cursor-pointer p-4 hover:bg-gray-100 peer-checked:bg-gray-300"
+              >What is Tailwind CSS?
+            </label>
+            <div class="hidden p-4 peer-checked:block">
+              Tailwind CSS is a utility-first framework that allows to build
+              custom designs without having to leave HTML.
+            </div>
+          </div>
+          <div id="qa2" class="border-b-2">
+            <input type="checkbox" id="faq2" class="peer hidden" />
+            <label
+              for="faq2"
+              class="block cursor-pointer p-4 hover:bg-gray-100 peer-checked:bg-gray-300"
+              >What is PostgreSQL?
+            </label>
+            <div class="hidden p-4 peer-checked:block">
+              The World's Most Advanced Open Source Relational Database.
+            </div>
+          </div>
+          <div id="qa3" class="border-b-2">    
+              <input type="checkbox" id="faq3" class="peer hidden" />
+              <label
+                for="faq3"
+                class="block cursor-pointer p-4 hover:bg-gray-100 peer-checked:bg-gray-300"
+                >What is Git?
+              </label>
+              <div class="hidden p-4 peer-checked:block">
+                Git is a free and open source distributed version control
+                system designed to handle everything from small to very large
+                projects with speed and efficiency.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer class="bg-gray-800 p-6 text-white ">
+
+      <div class="flex flex-col p-6 gap-6 justify-center sm:flex-row max-w-screen-xl mx-auto">
+        <div class="sm:w-1/2">
+          <p class="mb-2 text-lg font-semibold">Contact</p>
+          <div class="mb-2">
+            <i class="fas fa-map-marker-alt mr-2"></i>
+            <span>NRW</span>
+          </div>
+          <div class="mb-2">
+            <i class="fas fa-phone mr-2"></i>
+            <span>+49 130 8654 2648</span>
+          </div>
+          <div class="mb-2">
+            <i class="fas fa-envelope mr-2"></i>
+            <span>cnende@qq.com</span>
+          </div>
+        </div>
+
+        <div class="sm:w-1/2 ">
+          <p class="mb-2 text-lg font-semibold">Social Media</p>
+          <div class="mb-4">
+            <a
+              href="https://github.com/pzl2eu"
+              target="_blank"
+              class="mr-6 hover:text-gray-200"
+            >
+              <i class="fab fa-github text-2xl"></i>
+            </a>
+            <a
+              href="https://www.youtube.com/channel/UCMn46xoqN0AZBT6k2zjYKGQ"
+              target="_blank"
+              class="mr-6 hover:text-gray-200"
+            >
+              <i class="fab fa-youtube text-2xl"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="mt-6 py-6 text-center">&copy; 2025 Co., Ltd.</div>
+    </footer>
+  </body>
+</html>
