@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>cnende</title>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+  <style>
+    .social-icons {
+      display: flex;
+      gap: 20px; /* 图标之间的间隔 */
+    }
+
+    .github-icon {
+      font-size: 30px; /* 设置图标大小 */
+      color: #24292F; /* 默认颜色 */
+      text-decoration: none; /* 去掉链接下划线 */
+      transition: color 0.3s ease; /* 添加过渡效果 */
+    }
+
+    .discord-icon {
+      font-size: 30px; /* 设置图标大小 */
+      color: #5865F2; /* 默认颜色 */
+      text-decoration: none; /* 去掉链接下划线 */
+      transition: color 0.3s ease; /* 添加过渡效果 */
+    }
+
+    .youtube-icon {
+      font-size: 30px; /* 设置图标大小 */
+      color: #FF0000; /* 默认颜色 */
+      text-decoration: none; /* 去掉链接下划线 */
+      transition: color 0.3s ease; /* 添加过渡效果 */
+    }
+
+    .linkedin-icon {
+      font-size: 30px; /* 设置图标大小 */
+      color: #0077B5; /* 默认颜色 */
+      text-decoration: none; /* 去掉链接下划线 */
+      transition: color 0.3s ease; /* 添加过渡效果 */
+    }
+
+  </style>
+</head>
+<body>
+	<label for="query">Keyword:</label>
+  <input type="text" id="query" placeholder="Please enter text to query">
+  <button onclick="searchAPI()">search</button>
+  <div id="result">
+    <img src="#">
+  </div>
+
+  <div class="social-icons">
+    <a href="https://www.youtube.com/channel/UCMn46xoqN0AZBT6k2zjYKGQ" target="_blank" class="youtube-icon">
+      <i class="fab fa-youtube" ></i>
+    </a>
+    <a href="https://github.com/pzl2eu" target="_blank" class="github-icon">
+      <i class="fab fa-github"></i>
+    </a>
+    <a href="https://discord.gg/NpBdCrBVzr" target="_blank" class="discord-icon">
+      <i class="fab fa-discord"></i>
+    </a>
+    <a href="https://www.linkedin.com/in/zhao-luo-952464258" target="_blank" class="linkedin-icon">
+      <i class="fab fa-linkedin"></i>
+    </a>
+  </div>
+  
+  <script>
+    function searchAPI(){
+      const query = document.getElementById('query').value;
+      const apiKey = 'xWyiC6NTbUbCF4Vytm7Hi8gRahFgkKxW';
+      const url = `https://api.giphy.com/v1/gifs/translate?api_key=${apiKey}&s=${encodeURIComponent(query)}`;
+      const img = document.querySelector('img');
+      fetch(url, {mode: 'cors'})
+        .then(function(response) {
+          return response.json();
+        })
+        .then(function(response) {
+          img.src = response.data.images.original.url;
+        })
+        .catch(function(err) {
+          // ERROR
+        });
+    }
+  </script>
+</body>
+</html>
