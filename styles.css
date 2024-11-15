@@ -1,0 +1,32 @@
+  .social-icons {
+    display: flex;
+    gap: 20px; /* 图标之间的间隔 */
+  }
+
+  .github-icon {
+    font-size: 30px; /* 设置图标大小 */
+    color: #24292F; /* 默认颜色 */
+    text-decoration: none; /* 去掉链接下划线 */
+    transition: color 0.3s ease; /* 添加过渡效果 */
+  }
+
+  .discord-icon {
+    font-size: 30px; /* 设置图标大小 */
+    color: #5865F2; /* 默认颜色 */
+    text-decoration: none; /* 去掉链接下划线 */
+    transition: color 0.3s ease; /* 添加过渡效果 */
+  }
+
+  .youtube-icon {
+    font-size: 30px; /* 设置图标大小 */
+    color: #FF0000; /* 默认颜色 */
+    text-decoration: none; /* 去掉链接下划线 */
+    transition: color 0.3s ease; /* 添加过渡效果 */
+  }
+
+  .linkedin-icon {
+    font-size: 30px; /* 设置图标大小 */
+    color: #0077B5; /* 默认颜色 */
+    text-decoration: none; /* 去掉链接下划线 */
+    transition: color 0.3s ease; /* 添加过渡效果 */
+  }
