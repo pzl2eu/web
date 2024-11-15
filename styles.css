@@ -45,3 +45,60 @@ button:hover{
 transform: scale(1.05);
 }
 
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 25%;
+    grid-template-rows: auto 1fr auto;
+    grid-template-areas: 
+        "nav nav nav nav"
+        "header header header aside"
+        "main main main aside"
+        "footer footer footer footer";
+    height: 100vh;
+}
+
+nav {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border: 1px solid black;
+    grid-area: nav; 
+}
+
+header {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border: 1px solid black;
+    grid-area: header; 
+}
+
+main {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border: 1px solid black;
+    grid-area: main; 
+}
+
+aside {
+    background-color: white;
+    color: black;
+    padding: 20px;
+    border: 1px solid black;
+    grid-area: aside; 
+}
+
+footer {
+    background-color: white;
+    color: black;
+    padding: 10px;
+    border: 1px solid black;
+    grid-area: footer;
+}
+
+
+
