@@ -61,42 +61,37 @@ body {
 }
 
 nav {
-    background-color: white;
+    background-color: orange;
     color: black;
     padding: 10px;
-    border: 1px solid black;
     grid-area: nav; 
 }
 
 header {
-    background-color: white;
+    background-color: teal;
     color: black;
     padding: 20px;
-    border: 1px solid black;
     grid-area: header; 
 }
 
 main {
-    background-color: white;
+    background-color: palevioletred;
     color: black;
     padding: 20px;
-    border: 1px solid black;
     grid-area: main; 
 }
 
 aside {
-    background-color: white;
+    background-color: blanchedalmond;
     color: black;
     padding: 20px;
-    border: 1px solid black;
     grid-area: aside; 
 }
 
 footer {
-    background-color: white;
+    background-color: skyblue;
     color: black;
     padding: 10px;
-    border: 1px solid black;
     grid-area: footer;
 }
 
