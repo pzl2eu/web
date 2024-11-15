@@ -40,6 +40,18 @@
 
   </style>
 </head>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML框架示例</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+
+
 <body>
 	<label for="query">Keyword:</label>
   <input type="text" id="query" placeholder="Please enter text to query">
@@ -62,7 +74,43 @@
       <i class="fab fa-linkedin"></i>
     </a>
   </div>
+  <nav>
+    <ul>
+        <li><a href="#">首页</a></li>
+        <li><a href="#">关于我们</a></li>
+        <li><a href="#">服务</a></li>
+        <li><a href="#">联系我们</a></li>
+    </ul>
+  </nav>
+  <main>
+    <header>
+      <h1>我的网站</h1>
+      <p>欢迎访问我的网站，享受精彩内容！</p>
+    </header>
+    <section>
+      <h2>最新新闻</h2>
+      <p>这里是网站的最新新闻内容。</p>
+    </section>
+    <aside>
+      <h3>推荐文章</h3>
+      <ul>
+        <li><a href="#">文章1</a></li>
+        <li><a href="#">文章2</a></li>
+        <li><a href="#">文章3</a></li>
+      </ul>
+    </aside>
   
+    <form action="#" method="POST">
+      <label for="name">姓名:</label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">邮箱:</label>
+      <input type="email" id="email" name="email" required>
+      <button type="submit">提交</button>
+    </form>
+  </main>
+  <footer>
+    <p>&copy; 2024 我的公司. 保留所有权利。</p>
+  </footer>
   <script>
     function searchAPI(){
       const query = document.getElementById('query').value;
