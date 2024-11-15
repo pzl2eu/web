@@ -19,12 +19,16 @@
   </div>
 -->
   
-  <nav>
-    The LUO Project
-    <a href="#">Homepage</a>
-    <a href="#">Blog</a>
-    <a href="#">Subpage C</a>
-    <a href="#">Subpage D</a>
+  <nav style="display: grid; grid-template-columns: 1fr auto;">
+    <div style="justify-self: start;">
+      The LUO Project
+    </div>
+
+    <div style="justify-self: end;">
+      <a href="#">Homepage</a>
+      <a href="#">Subpage</a>
+    </div>
+    
   </nav>
   <header>
     <h1>我的网站</h1>
@@ -38,6 +42,9 @@
         <li>Software Engineer(JS Fullstack)</li>
         <li>Goethe-Zertifikat C1</li>
         <li>English Certifikat C1</li>
+        <li>European Trip</li>
+        <li>Partner</li>
+        <li>Master a musical instrument</li>
       </ul>
       <h2>Vision Board</h2>
       <ul>
@@ -99,31 +106,31 @@
       <li><a href="#">Content D</a></li>
     </ul>
   </aside>
-  <footer>
-    <p>&copy; 2024 我的公司. 保留所有权利。</p>
-    <div style="display: grid;">
-      <i class="fas fa-map-marker-alt"> Google Map API</i>   
-      <i class="fas fa-phone"> +86 135 8654 2648</i> 
-      <i class="fas fa-envelope"> email@gmail.com</i>
+  <footer style="display: grid; grid-template-columns: 1fr auto;">
+    <div style="justify-self: start; display: flex; flex-direction: column; gap: 20px;">
+      <i class="fas fa-map-marker-alt">  Google Map API</i>  
+      <i class="fas fa-phone">  +86 135 8654 2648</i>
+      <i class="fas fa-envelope">  email@gmail.com</i>
+    </div>
+    <div class="social-icons" style="justify-self: end;">
+      <a href="https://www.youtube.com/channel/UCMn46xoqN0AZBT6k2zjYKGQ" target="_blank" class="youtube-icon">
+        <i class="fab fa-youtube" ></i>
+      </a>
+      <a href="https://github.com/pzl2eu" target="_blank" class="github-icon">
+        <i class="fab fa-github"></i>
+      </a>
+      <a href="https://discord.gg/NpBdCrBVzr" target="_blank" class="discord-icon">
+        <i class="fab fa-discord"></i>
+      </a>
+      <a href="https://www.linkedin.com/in/zhao-luo-952464258" target="_blank" class="linkedin-icon">
+        <i class="fab fa-linkedin"></i>
+      </a>
+      <a href="https://www.wa.me/8613082362386" target="_blank" class="whatsapp-icon">
+        <i class="fab fa-whatsapp"></i>
+      </a>
     </div>
   </ul>
-  <div class="social-icons">
-    <a href="https://www.youtube.com/channel/UCMn46xoqN0AZBT6k2zjYKGQ" target="_blank" class="youtube-icon">
-      <i class="fab fa-youtube" ></i>
-    </a>
-    <a href="https://github.com/pzl2eu" target="_blank" class="github-icon">
-      <i class="fab fa-github"></i>
-    </a>
-    <a href="https://discord.gg/NpBdCrBVzr" target="_blank" class="discord-icon">
-      <i class="fab fa-discord"></i>
-    </a>
-    <a href="https://www.linkedin.com/in/zhao-luo-952464258" target="_blank" class="linkedin-icon">
-      <i class="fab fa-linkedin"></i>
-    </a>
-    <a href="https://www.wa.me/8613082362386" target="_blank" class="whatsapp-icon">
-      <i class="fab fa-whatsapp"></i>
-    </a>
-  </div>
+  
   </footer>
 </body>
 </html>
