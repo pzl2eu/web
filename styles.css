@@ -31,6 +31,13 @@ text-decoration: none; /* 去掉链接下划线 */
 transition: color 0.3s ease; /* 添加过渡效果 */
 }
 
+.whatsapp-icon {
+    font-size: 30px; /* 设置图标大小 */
+    color: #25D366; /* 默认颜色 */
+    text-decoration: none; /* 去掉链接下划线 */
+    transition: color 0.3s ease; /* 添加过渡效果 */
+    }
+
 button{
     cursor: pointer;
 }
