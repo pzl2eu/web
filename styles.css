@@ -1,3 +1,7 @@
+*{
+    box-sizing: border-box;
+}
+
 .nav-divs{
     display: flex;
     justify-content: space-between;
