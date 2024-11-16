@@ -1,3 +1,15 @@
+.footer-icons{
+    display: flex;
+    justify-content: space-evenly;
+    padding: 50px;
+}
+
+.contact-icons{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
 .social-icons {
 display: flex;
 gap: 20px; /* 图标之间的间隔 */
